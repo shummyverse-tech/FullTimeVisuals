@@ -36,18 +36,17 @@
             position: relative;
             overflow: hidden;
             background:
-                radial-gradient(circle at center, #202020 0%, #080808 45%, #000000 100%);
+    linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.65)),
+    url("IMG_5520.JPG") center center / cover no-repeat;
         }
 
         .hero::before {
-            content: "";
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: rgba(255, 255, 255, 0.04);
-            border-radius: 50%;
-            filter: blur(80px);
-        }
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.15);
+}
+        
 
         .hero-content {
             position: relative;
